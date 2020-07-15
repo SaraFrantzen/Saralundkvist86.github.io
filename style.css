@@ -4,13 +4,13 @@ body {
     background-image: url("/home/sara/Bilder/background2.jpg");
     background-size: cover;
   }
-  .navigation ul{
+  .navigation ul li{
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 10;
+    display: inline;
   }
   li {
-    display: inline;
     margin: 10px;
   }
 h1 {
@@ -48,7 +48,8 @@ h1 {
       color: green;
   }
  .aboutT {
-     opacity: 0.5;
+     opacity: 0.7;
+     width: 700px;
  }
  footer {
      color: #556B2F;
