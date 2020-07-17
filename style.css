@@ -1,10 +1,14 @@
-
-
-body {
+* {
+    box-sizing: border-box;
+}
+body { 
     background-image: url("/home/sara/Bilder/background2.jpg");
     background-size: cover;
+    margin: 0;
+    padding: 0;
   }
   .navigation ul li{
+    font-family: sans-serif; 
     list-style-type: none;
     margin: 10px;
     padding: 10;
@@ -43,6 +47,9 @@ h1 {
   .picTable {
       text-align: right;
   }
+  .videoT {
+    margin: 30px;
+  }
   .videoTxt {
       font-family: Helvetica;
       color: green;
@@ -53,5 +60,7 @@ h1 {
  }
  footer {
      color: #556B2F;
+     margin: 30px;
+     font-family: sans-serif;
  }
  
