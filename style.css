@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body { 
-    background-image: url(background2.jpg);
+    background-image: url("https://github.com/Saralundkvist86/Saralundkvist86.github.io/blob/master/background2.jpg?raw=true");
     background-size: cover;
     margin: 0;
     padding: 0;
