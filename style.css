@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body { 
-    background-image: url("pictures/background2.jpg");
+    background-image: url(background2.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
