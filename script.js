@@ -1,4 +1,4 @@
-let element = ducument.querySelector("button");
+let element = ducument.getElementById("button");
 function turnButtonRed () {
     element.style.backgroundColor = 'red';
     element.style.color = 'white';
