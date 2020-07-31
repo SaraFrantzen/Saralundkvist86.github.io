@@ -1,7 +1,7 @@
-let element = ducument.getElementById("button");
-function turnButtonRed () {
-    element.style.backgroundColor = 'red';
-    element.style.color = 'white';
-    element.innerHTML = "Idiot";
+let idiotButton = document.getElementById("button");
+ turnButtonRed = () => {
+    idiotButton.style.backgroundColor = 'red';
+    idiotButton.style.color = 'white';
+    idiotButton.innerHTML = "Idiot";
 }
-element.onclick = turnButtonRed;
+idiotButton.onclick = turnButtonRed;
