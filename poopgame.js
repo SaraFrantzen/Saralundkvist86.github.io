@@ -15,12 +15,12 @@ let openDoor3;
 
 //determine if poop is found
 const isPoop = (door) => {
-    if (door === poopPath) {
+    if (door.src === poopPath) {
       return true;
     } else {
       return false;
     }
-  }
+  };
 
 //decrease num of available doors to click, and checks gameOver
 const playDoor = (door) => {
@@ -30,7 +30,7 @@ const playDoor = (door) => {
     } else if (isPoop(door)) {
     gameOver('lose');
   }
-}
+};
 
 // to get random picture to show up behind "door"
 const randomDoorGenerator = () => {
@@ -48,7 +48,7 @@ const randomDoorGenerator = () => {
         openDoor2 = goodPath1;
         openDoor3 = poopPath;
     }
-}
+};
 
 door1.onclick = () => {
         doorImage1.src = openDoor1;
@@ -71,6 +71,6 @@ const gameOver = (status) => {
       } else { 
         startButton.innerHTML = 'Game over! Play again?';
       }
-}
+};
 
 randomDoorGenerator();
