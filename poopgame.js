@@ -13,7 +13,7 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
-//determine is poop is found
+//determine if poop is found
 const isPoop = (door) => {
     if (door.src === poopPath) {
       return true;
@@ -23,12 +23,11 @@ const isPoop = (door) => {
   }
 
 //decrease num of available doors to click, and checks gameOver
-const playDoor = () => {
+const playDoor = (door) => {
     numClosedDoors--;
     if (numClosedDoors === 0) {
         gameOver('win');
-    } 
-    else if (isPoop(door)) {
+    } else if (isPoop(door)) {
     gameOver('lose');
   }
 }
@@ -69,8 +68,7 @@ door3.onclick = () => {
 const gameOver = (status) => {
     if (status === 'win') {
         startButton.innerHTML = 'You win! Play again?';
-      }
-    else { (status === 'lose')
+      } else { 
         startButton.innerHTML = 'Game over! Play again?';
       }
 }
