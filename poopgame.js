@@ -27,6 +27,9 @@ const playDoor = () => {
     if (numClosedDoors === 0) {
         gameOver('win');
     } 
+    else if (isBot(door)) {
+    gameOver('lose');
+  }
 }
 
 // to get random picture to show up behind "door"
@@ -47,20 +50,20 @@ const randomDoorGenerator = () => {
     }
 }
 
-doorImage1.onclick = () => {
+door1.onclick = () => {
         doorImage1.src = openDoor1;
-        playDoor();
+        playDoor(door1);
 }   
 
 
-doorImage2.onclick = () => {
+door2.onclick = () => {
         doorImage2.src = openDoor2;
-        playDoor();
+        playDoor(door2);
 }    
 
-doorImage3.onclick = () => {
+door3.onclick = () => {
         doorImage3.src = openDoor3;
-        playDoor();
+        playDoor(door3);
 }
 const gameOver = (status) => {
     if (status === 'win') {
