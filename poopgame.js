@@ -3,18 +3,18 @@ let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
 
-const poopPath="./poop.jpg";
-const goodPath1="./piccachou.jpg";
-const goodPath2="./love.jpg";
-const closedDoorPath="./showercurtains.jpg";
+let poopPath="./poop.jpg";
+let goodPath1="./piccachou.jpg";
+let goodPath2="./love.jpg";
+let closedDoorPath="./showercurtains.jpg";
 
-const numClosedDoors = 3;
+let numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
 
 //each door can only be open once!
-const isClicked = (door) => {
+let isClicked = (door) => {
     if (door.src === closedDoorPath) {
         return false;
       } else {
