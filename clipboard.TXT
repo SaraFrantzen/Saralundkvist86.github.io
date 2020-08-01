@@ -1,0 +1,15 @@
+/*each door can only be open once!
+let isClicked = (door) => {
+    if (door.src === closedDoorPath) {
+        return false;
+      } else {
+        return true;
+      }
+}
+
+
+*/
+
+/*
+
+*/
