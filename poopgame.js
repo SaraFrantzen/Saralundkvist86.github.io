@@ -70,7 +70,7 @@ const gameOver = (status) => {
         startButton.innerHTML = 'You win! Play again?';
       }
     else { (status === 'lose')
-        startButton.innerHTML = 'Game over! Play again?'
+        startButton.innerHTML = 'Game over! Play again?';
       }
 }
 
