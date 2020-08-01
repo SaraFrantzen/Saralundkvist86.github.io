@@ -13,7 +13,7 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
-//each door can only be open once!
+/*each door can only be open once!
 let isClicked = (door) => {
     if (door.src === closedDoorPath) {
         return false;
@@ -29,7 +29,7 @@ const playDoor = () => {
         gameOver('win');
     } 
 }
-
+*/
 // to get random picture to show up behind "door"
 const randomDoorGenerator = () => {
     const poopDoor = Math.floor(Math.random() * numClosedDoors);
@@ -49,30 +49,22 @@ const randomDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
-    if (!isClicked(doorImage1)) {
         doorImage1.src = openDoor1;
-        playDoor();
     }
 }
 
 doorImage2.onclick = () => {
-    if (!isClicked(doorImage2)) {
         doorImage2.src = openDoor2;
-        playDoor();
-    }
-}
+       }
 
 doorImage3.onclick = () => {
-    if (!isClicked(doorImage3)) {
         doorImage3.src = openDoor3;
-        playDoor();
-    }
 }
-
+/*
 const gameOver = () => {
     if (status === 'win') {
         startButton.innerHTML = 'You win! Play again?';
       }
 }
-
+*/
 randomDoorGenerator();
