@@ -1,16 +1,36 @@
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
+let startButton = document.getElementById('start');
 
 const poopPath="./poop.jpg";
 const goodPath1="./piccachou.jpg";
 const goodPath2="./love.jpg";
+const closedDoorPath="./showercurtains.jpg";
 
 const numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
 
+//each door can only be open once!
+const isClicked = (door) => {
+    if (door.src === closedDoorPath) {
+        return false;
+      } else {
+        return true;
+      }
+}
+
+//decrease num of available doors to click, and checks gameOver
+const playDoor = () => {
+    numClosedDoors--;
+    if (numClosedDoors === 0) {
+        gameOver('win');
+    } 
+}
+
+// to get random picture to show up behind "door"
 const randomDoorGenerator = () => {
     const poopDoor = Math.floor(Math.random() * numClosedDoors);
     if (poopDoor === 0) {
@@ -29,15 +49,30 @@ const randomDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
-    doorImage1.src = openDoor1;
+    if (currentlyPlaying && !isClicked(doorImage1)) {
+        doorImage1.src = openDoor1;
+        playDoor();
+    }
 }
 
 doorImage2.onclick = () => {
-    doorImage2.src = openDoor2;
+    if (currentlyPlaying && !isClicked(doorImage2)) {
+        doorImage2.src = openDoor2;
+        playDoor();
+    }
 }
 
 doorImage3.onclick = () => {
-    doorImage3.src = openDoor3;
+    if (currentlyPlaying && !isClicked(doorImage3)) {
+        doorImage3.src = openDoor3;
+        playDoor();
+    }
+}
+
+const gameOver = () => {
+    if (status === 'win') {
+        startButton.innerHTML = 'You win! Play again?';
+      }
 }
 
 randomDoorGenerator();
