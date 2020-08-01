@@ -52,18 +52,18 @@ const randomDoorGenerator = () => {
 
 door1.onclick = () => {
         doorImage1.src = openDoor1;
-        playDoor(door1);
+        playDoor(doorImage1);
 }   
 
 
 door2.onclick = () => {
         doorImage2.src = openDoor2;
-        playDoor(door2);
+        playDoor(doorImage2);
 }    
 
 door3.onclick = () => {
         doorImage3.src = openDoor3;
-        playDoor(door3);
+        playDoor(doorImage3);
 }
 const gameOver = (status) => {
     if (status === 'win') {
