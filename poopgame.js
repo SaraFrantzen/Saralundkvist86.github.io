@@ -49,21 +49,21 @@ const randomDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
-    if (currentlyPlaying && !isClicked(doorImage1)) {
+    if (!isClicked(doorImage1)) {
         doorImage1.src = openDoor1;
         playDoor();
     }
 }
 
 doorImage2.onclick = () => {
-    if (currentlyPlaying && !isClicked(doorImage2)) {
+    if (!isClicked(doorImage2)) {
         doorImage2.src = openDoor2;
         playDoor();
     }
 }
 
 doorImage3.onclick = () => {
-    if (currentlyPlaying && !isClicked(doorImage3)) {
+    if (!isClicked(doorImage3)) {
         doorImage3.src = openDoor3;
         playDoor();
     }
