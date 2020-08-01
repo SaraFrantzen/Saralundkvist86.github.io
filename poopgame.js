@@ -51,7 +51,6 @@ const randomDoorGenerator = () => {
 doorImage1.onclick = () => {
         doorImage1.src = openDoor1;
     }
-}
 
 doorImage2.onclick = () => {
         doorImage2.src = openDoor2;
