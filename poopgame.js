@@ -13,6 +13,15 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+//each door should just be clickable once!
+let isClicked = (door) => {
+    if (door.src === closedDoorPath) {
+        return false;
+      } else {
+        return true;
+      }
+}
+
 //decrease num of available doors to click, and checks gameOver
 const playDoor = () => {
     numClosedDoors--;
@@ -40,19 +49,25 @@ const randomDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
+    if(!isClicked(doorImage1)) {
         doorImage1.src = openDoor1;
         playDoor();
     }
+}   
 
 
 doorImage2.onclick = () => {
+    if(!isClicked(doorImage2)) {
         doorImage2.src = openDoor2;
         playDoor();
-       }
+    }
+}    
 
 doorImage3.onclick = () => {
+    if(!isClicked(doorImage3)) {
         doorImage3.src = openDoor3;
         playDoor();
+    }
 }
 const gameOver = (status) => {
     if (status === 'win') {
