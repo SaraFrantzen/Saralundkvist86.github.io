@@ -13,6 +13,13 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+const isPoop = (door) => {
+    if (door.src === poopPath) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 //decrease num of available doors to click, and checks gameOver
 const playDoor = () => {
