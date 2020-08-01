@@ -13,6 +13,7 @@ let openDoor1;
 let openDoor2;
 let openDoor3;
 
+//determine is poop is found
 const isPoop = (door) => {
     if (door.src === poopPath) {
       return true;
