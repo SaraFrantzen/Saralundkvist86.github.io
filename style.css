@@ -76,8 +76,15 @@ h1 {
     cursor: pointer;
  }
 
+#door1 {
 
+}
+#door2 {
 
+}
+#door3 {
+
+}
  .body2 {
   background-color: #010165;
   margin: 0px;
@@ -100,6 +107,7 @@ h1 {
 .instructions-row {
   margin: 0 auto;
   width: 400px;
+  padding-bottom: 40px; 
 }
 .instructions-number {
   padding-right: 25px;
@@ -126,7 +134,7 @@ h1 {
   width: 120px;
   height: 43px;
   font-family: 'Work Sans';
-  background-color: #eb6536;
+  background-color: #0ffff;
   padding-top: 18px;
   font-size: 18px;
   text-align: center;
