@@ -9,10 +9,10 @@ idiotButton.onclick = turnButtonRed;
 
 
 
-let doorImage1 = document.getElementById('door1');
-let doorImage2 = document.getElementById('door2');
-let doorImage3 = document.getElementById('door3');
-let startButton = document.getElementById('start');
+let doorImage1 = document.getElementById("door1");
+let doorImage2 = document.getElementById("door2");
+let doorImage3 = document.getElementById("door3");
+let startButton = document.getElementById("start");
 let beachDoorPath="piccachou.jpg"; 
 let botDoorPath="poop.jpg";
 let spaceDoorPath="love.jpg";
