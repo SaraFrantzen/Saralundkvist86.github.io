@@ -78,12 +78,21 @@ h1 {
 
 #door1 {
   border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 300px;
 }
 #door2 {
   border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 300px;
 }
 #door3 {
   border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 300px;
 }
  .body2 {
   background-color: #010165;
@@ -123,11 +132,6 @@ h1 {
 }
 .door-row {
   text-align: center;
-}
-.door-frame {
-  cursor: pointer;
-  padding: 10px;
-  width: 300px;
 }
 .start-row {
   margin: auto;
