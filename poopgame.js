@@ -14,8 +14,18 @@ let openDoor2;
 let openDoor3;
 
 //determine if poop is found
+/* old code
 const isPoop = (door) => {
     if (door.src === poopPath) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  */
+ //determina if poop is found with regex (from coach Thomas)
+ const isPoop = (door) => {
+    if (door.src.includes(poopPath.replace(/^.*[\\\/]/, '')) ) {
       return true;
     } else {
       return false;
