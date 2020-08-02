@@ -25,11 +25,11 @@ const isPoop = (door) => {
 //decrease num of available doors to click, and checks gameOver
 const playDoor = (door) => {
     numClosedDoors--;
-    if (numClosedDoors === 0) {
-        gameOver('win');
-    } else if (isPoop(door)) {
+    if (isPoop(door)) {
     gameOver('lose');
-  }
+  }  else if (numClosedDoors === 0) {
+    gameOver('win');
+} 
 };
 
 // to get random picture to show up behind "door"
