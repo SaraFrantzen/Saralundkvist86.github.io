@@ -66,10 +66,10 @@ door3.onclick = () => {
         playDoor(doorImage3);
 }
 const gameOver = (status) => {
-    if (status === 'win') {
-        startButton.innerHTML = 'You win! Play again?';
-      } else { 
+    if (status === 'lose') {
         startButton.innerHTML = 'Game over! Play again?';
+      } else { 
+        startButton.innerHTML = 'You win! Play again?';
       }
 };
 
