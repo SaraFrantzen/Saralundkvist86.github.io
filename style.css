@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
   }
-  .navigation ul li{
+  .navigation {
     font-size: 25px;
     font-family: 'Barrio', cursive; 
     list-style-type: none;
