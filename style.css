@@ -8,10 +8,13 @@
     padding: 0;
   }
   .navigation {
-    background-color:olivedrab;
+    background-color:#990000;
     position: relative;
     bottom: 15px;
     height: 80px; 
+  }
+  ul {
+    padding-top: 25px;
   }
   .navigation ul li{
     font-size: 25px;
