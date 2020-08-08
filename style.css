@@ -8,10 +8,17 @@
     padding: 0;
   }
   .navigation {
+    background-color:olivedrab;
+    position: relative;
+    bottom: 15px;
+    height: 80px; 
+  }
+  .navigation ul li{
     font-size: 25px;
     font-family: 'Barrio', cursive; 
     list-style-type: none;
-    margin: 20px;
+    text-align: center;
+    margin: 40px;
     padding: 20px;
     display: inline;
   }
