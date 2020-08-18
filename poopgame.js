@@ -3,10 +3,10 @@ let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
 let startButton = document.getElementById('start');
 
-let poopPath="./poop.jpg";
-let goodPath1="./piccachou.jpg";
-let goodPath2="./love.jpg";
-let closedDoorPath="./showercurtains.jpg";
+let poopPath="./pictures/gamePictures/poop.jpg";
+let goodPath1="./pictures/gamePictures/piccachou.jpg";
+let goodPath2="./pictures/gamePictures/love.jpg";
+let closedDoorPath="./pictures/gamePictures/showercurtains.jpg";
 
 let numClosedDoors = 3;
 let openDoor1;
