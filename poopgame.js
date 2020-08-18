@@ -14,7 +14,7 @@ let openDoor2;
 let openDoor3;
 
 //determine if poop is found
-/* old code 
+/* OLD CODE
 const isPoop = (door) => {
     if (door.src === poopPath) {
       return true;
@@ -33,7 +33,16 @@ const isPoop = (door) => {
     }
   };
 
-  //each door can only be open once!
+  //each door can only be open once! 
+  /* OLD CODE
+  let isClicked = (door) => {
+    if (door.src === closedDoorPath) {
+        return false;
+      } else {
+        return true;
+      }
+} */
+// each door can only be open once! Using same regex code as in isPoop() 
 let isClicked = (door) => {
     if (door.src.includes(closedDoorPath.replace(/^.*[\\\/]/, '')) ) {
         return false;
