@@ -12,12 +12,26 @@
   
   
   header {
-    margin-right: 90px;
+    
     grid-column: 1 / span2;
     grid-row: 1 / 2;
     justify-self: center;
+ 
   }
+  .navHearts {
+    grid-column: 3 / span2;
+    grid-row: 1 / 2;
+    z-index: 5;
+    justify-self:center;
+    margin-left: 150px;
+    
+    
+    }
+  #heartPicture{
+    height: 130%;
+    width: 250px;
   
+  }
   .navigation{
     grid-column: 3 / span2;
     grid-row: 1 / 2;
@@ -25,34 +39,36 @@
     justify-self: center;
   }
   #about {
-    color: rgb(255, 153, 128);
+    color:rgb(255, 71, 26);
   }
   #home {
-    color:rgb(255, 133, 102);
+    color: rgb(255, 153, 128);
   }
   #media {
-    color:rgb(255, 112, 77);
+    color: rgb(255, 153, 128);
   }
   #silly {
-    color:rgb(255, 92, 51);
+    color: rgb(255, 153, 128);
   }
   #games {
-    color:rgb(255, 71, 26);
+     color: rgb(255, 153, 128);
   }
   
   
   a {
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 30px;
+    font-size: 50px;
     text-decoration: none; 
     cursor: pointer;
   
   }
   
   ul li {
-    margin-left: 30px;
+ 
     list-style-type: none; 
+    display: inline;
     text-align: center;
+    padding: 22px;
   }
   
   .sara {
@@ -71,6 +87,7 @@
   .profile {
     height: 100%;
     width: 1200px;  
+  
   }
   
   nav {
