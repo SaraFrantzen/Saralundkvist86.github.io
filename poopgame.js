@@ -14,7 +14,7 @@ let openDoor2;
 let openDoor3;
 
 //determine if poop is found
-/* old code
+/* old code 
 const isPoop = (door) => {
     if (door.src === poopPath) {
       return true;
@@ -22,8 +22,9 @@ const isPoop = (door) => {
       return false;
     }
   };
-  */
- //determina if poop is found with regex (from coach Thomas)
+ */
+
+ //determine if poop is found with regex (from coach Thomas)
  const isPoop = (door) => {
     if (door.src.includes(poopPath.replace(/^.*[\\\/]/, '')) ) {
       return true;
@@ -31,6 +32,15 @@ const isPoop = (door) => {
       return false;
     }
   };
+
+  //each door can only be open once!
+let isClicked = (door) => {
+    if (door.src.includes(closedDoorPath.replace(/^.*[\\\/]/, '')) ) {
+        return false;
+      } else {
+        return true;
+      }
+};
 
 //decrease num of available doors to click, and checks gameOver
 const playDoor = (door) => {
