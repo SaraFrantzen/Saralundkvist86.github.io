@@ -49,9 +49,7 @@ h1 {
       text-align: center;
       font-family: Helvetica;
   }
-  .profile {
-    border-radius: 50%;
-  }
+  
   .index {
     color: #556B2F
   }
@@ -146,3 +144,4 @@ h1 {
 #start {
   text-align: center;
 }
+
