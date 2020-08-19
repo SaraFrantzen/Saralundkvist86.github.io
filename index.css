@@ -8,53 +8,64 @@
     align-content: space-evenly;
     justify-content: space-evenly;
     background-color: white;
-  }
+}
   
-  
-  header {
-    margin-right: 90px;
+header {
     grid-column: 1 / span2;
     grid-row: 1 / 2;
     justify-self: center;
-  }
-  
-  .navigation{
+}
+
+.navHearts {
+    grid-column: 3 / span2;
+    grid-row: 1 / 2;
+    z-index: 5;
+    justify-self:center;
+    margin-left: 150px;
+}
+
+#heartPicture{
+    height: 130%;
+    width: 350px;
+}
+
+.navigation{
     grid-column: 3 / span2;
     grid-row: 1 / 2;
     z-index: 5;
     justify-self: center;
-  }
-  #about {
-    color: rgb(255, 153, 128);
-  }
-  #home {
-    color:rgb(255, 133, 102);
-  }
-  #media {
-    color:rgb(255, 112, 77);
-  }
-  #silly {
-    color:rgb(255, 92, 51);
-  }
-  #games {
+}
+#about {
     color:rgb(255, 71, 26);
-  }
+}
+#home {
+    color: rgb(255, 153, 128);
+}
+#media {
+    color: rgb(255, 153, 128);
+}
+#silly {
+    color: rgb(255, 153, 128);
+}
+#games {
+     color: rgb(255, 153, 128);
+}
   
-  
-  a {
+a {
     font-family: 'Covered By Your Grace', cursive;
-    font-size: 30px;
+    font-size: 50px;
     text-decoration: none; 
+    cursor: pointer;
+}
   
-  }
-  
-  ul li {
-    margin-left: 30px;
+ul li {
     list-style-type: none; 
+    display: inline;
     text-align: center;
-  }
+    padding: 22px;
+}
   
-  .sara {
+.sara {
     grid-column: 1 / span2;
     grid-row: 1 / 2;
     z-index: 5;
@@ -62,22 +73,24 @@
     font-size: 80px;
     color:rgb(179, 134, 0);
     text-align: left;
-  }
-  .social {
-    height: 80px;
-    justify-self: left;
-  }
-  .profile {
+}
+
+.profile {
     height: 100%;
     width: 1200px;  
-  }
+}
   
-  nav {
+nav {
     grid-column: 1 / span2;
     grid-row: 2 / 3;
     justify-self: center;
-  }
+}
 
+h2 {
+    font-family: 'Bad Script', cursive;
+    font-size: 40px;
+    color:rgb(179, 134, 0);
+}
 #profilePicture{
     width: 400px;
     height: 400px;
