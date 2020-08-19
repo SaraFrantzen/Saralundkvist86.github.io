@@ -4,7 +4,7 @@
     margin: auto;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 200px 700px 200px; 
+    grid-template-rows: 400px 100px 200px 200px 200px; 
     align-content: space-evenly;
     justify-content: space-evenly;
     background-color: white;
@@ -21,24 +21,22 @@ header {
     grid-row: 1 / 2;
     z-index: 5;
     justify-self:center;
-    margin-left: 180px;
 }
 
 #heartPicture{
-  padding-top: 30px;
-    height: 130%;
-    width: 350px;
-}
-
+      height: 130%;
+      width: 600px;
+  }
+  
 .navigation{
     grid-column: 3 / span2;
     grid-row: 1 / 2;
     z-index: 5;
     justify-self: center;
 }
-#about:hover,
+#home:hover,
 #media:hover,
-#silly:hover,
+#about:hover,
 #games:hover {
   color:rgb(255, 71, 26);
 }
@@ -46,13 +44,13 @@ header {
     color: rgb(255, 153, 128);
 }
 #home {
-    color:rgb(255, 71, 26);
+    color: rgb(255, 153, 128);
 }
 #media {
     color: rgb(255, 153, 128);
 }
 #silly {
-    color: rgb(255, 153, 128);
+    color:rgb(255, 71, 26);
 }
 #games {
      color: rgb(255, 153, 128);
@@ -87,6 +85,7 @@ ul li {
     width: 1090px;  
 }
   
+  
 nav {
     grid-column: 1 / span2;
     grid-row: 2 / 3;
@@ -95,67 +94,34 @@ nav {
 
 h2 {
     font-family: 'Bad Script', cursive;
-    font-size: 50px;
+    font-size: 40px;
     color:rgb(179, 134, 0);
 }
-#profilePicture{
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    padding-top: 50px;
+#loveButton{
+  grid-row: 4 / 5;
+  grid-column: 3 / 3;
+  
 }
 
-.profilePic {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    justify-self: center;
- }
 
- p {
-    font-family: 'Kalam', cursive;
-    font-size: 25px;
-    font-weight: bold;
-    }
-
-#craft {
-  font-family: 'Covered By Your Grace', cursive;
+button {
+    text-align: center;
+    background-color: #ffcce6;
+    text-decoration: none;
+    display: inline-block;
     font-size: 30px;
-    text-decoration: none; 
     cursor: pointer;
-    color: rgb(255, 153, 128);
-    line-height: 0;
-
-}
- 
- .leftText {
-   grid-row: 3/ 4;
-   grid-column: 1 / 1;
-   justify-self: right;
+    height: 100px;
+    width: 200px;
+    border: none;
+  }
+ .txt {
+   grid-row: 3 /4;
+   grid-column: 2 / span2;
  }
- 
- .rightText {
-   grid-row: 3/ 4;
-   grid-column: 3 / 3;
-   justify-self: left;
-   padding-top: 140px;
+
+ .mandala {
+   grid-row: 3 / span2;
+   column: 1 / span2;
+   z-index: 5;
  }
- 
- footer {
-    background: linear-gradient(to top, #ffffff 70%, #ffcc66 100%);
-    grid-column: 1 / span4;
-    grid-row: 4 / 5;
-  
-}
-
-h3 {
-    padding-left: 60px;
-    font-size: 50px;
-    font-family: 'Covered By Your Grace', cursive;
-} 
-
-h4 {
-    padding-left: 60px;
-    font-family: 'Bad Script', cursive;
-    line-height: 0;
-}
-  

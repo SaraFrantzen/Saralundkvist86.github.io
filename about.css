@@ -37,6 +37,12 @@ header {
     z-index: 5;
     justify-self: center;
 }
+#home:hover,
+#media:hover,
+#silly:hover,
+#games:hover {
+  color:rgb(255, 71, 26);
+}
 #about {
     color:rgb(255, 71, 26);
 }
