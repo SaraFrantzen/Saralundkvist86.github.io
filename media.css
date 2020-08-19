@@ -36,13 +36,13 @@ header {
     justify-self: center;
 }
 #about {
-    color:rgb(255, 71, 26);
+    color: rgb(255, 153, 128);
 }
 #home {
     color: rgb(255, 153, 128);
 }
 #media {
-    color: rgb(255, 153, 128);
+    color:rgb(255, 71, 26);
 }
 #silly {
     color: rgb(255, 153, 128);
