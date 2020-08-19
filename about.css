@@ -21,13 +21,15 @@ header {
     grid-row: 1 / 2;
     z-index: 5;
     justify-self:center;
-    margin-left: 150px;
+    margin-left: 180px;
 }
 
 #heartPicture{
-    height: 130%;
-    width: 350px;
-}
+    padding-top: 30px;
+      height: 130%;
+      width: 350px;
+  }
+  
 
 .navigation{
     grid-column: 3 / span2;
@@ -77,8 +79,9 @@ ul li {
 
 .profile {
     height: 100%;
-    width: 1200px;  
+    width: 1090px;  
 }
+  
   
 nav {
     grid-column: 1 / span2;
