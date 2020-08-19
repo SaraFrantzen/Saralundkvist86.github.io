@@ -4,7 +4,7 @@
     margin: auto;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 100px 200px 200px 200px; 
+    grid-template-rows: 400px 200px 200px 200px 200px; 
     align-content: space-evenly;
     justify-content: space-evenly;
     background-color: white;
@@ -97,31 +97,37 @@ h2 {
     font-size: 40px;
     color:rgb(179, 134, 0);
 }
-#loveButton{
-  grid-row: 4 / 5;
-  grid-column: 3 / 3;
-  
-}
 
 
 button {
-    text-align: center;
-    background-color: #ffcce6;
+   grid-row: 4 / 4;
+ grid-column: 2 / 3;
+justify-self: center;
+z-index: 5;
+    background-color: rgb(255, 153, 128);
     text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
+    font-size: 50px;
     cursor: pointer;
-    height: 100px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border: none;
+    font-family: 'Kalam', cursive;;
+    font-weight: bold;
+    border-radius: 50%;
+    z-index: 5;
   }
  .txt {
-   grid-row: 3 /4;
+   grid-row: 3 /3;
    grid-column: 2 / span2;
- }
+   z-index: 5;
+    }
 
  .mandala {
    grid-row: 3 / span2;
-   column: 1 / span2;
-   z-index: 5;
+   grid-column: 3 / span2;
+  
  }
+ #mandalaPicture{
+   width: 550px;
+ }
+

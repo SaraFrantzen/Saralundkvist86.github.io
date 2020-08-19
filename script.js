@@ -1,10 +1,19 @@
-let idiotButton = document.getElementById("button");
- turnButtonRed = () => {
-    idiotButton.style.backgroundColor = 'red';
-    idiotButton.style.color = 'white';
-    idiotButton.innerHTML = "Idiot";
+/*
+let lovePic ="./pictures/sara.jpg"
+
+let clickedButton = document.getElementById('loveButton');
+getLove = () => {
+    loveButton.src= lovePic;
 }
-idiotButton.onclick = turnButtonRed;
+clickedButton.onclick = getLove
 
-
-
+*/ 
+let clickedButton = document.getElementById('loveButton');
+ showLove= () => {
+    clickedButton.style.backgroundColor = '#ffcce6';
+    clickedButton.style.fontSize = '40px';
+    clickedButton.style.fontFamily = 'Permanent Marker';
+	clickedButton.innerHTML = "You are amazing!!";
+       }
+       clickedButton.onclick =  showLove;
+     
