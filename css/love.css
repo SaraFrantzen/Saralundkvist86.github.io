@@ -4,7 +4,7 @@
     margin: auto;
     grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 100px 700px 600px 200px; 
+    grid-template-rows: 400px 200px 200px 200px 200px; 
     align-content: space-evenly;
     justify-content: space-evenly;
     background-color: white;
@@ -21,19 +21,24 @@ header {
     grid-row: 1 / 2;
     z-index: 5;
     justify-self:center;
-    margin-left: 150px;
 }
 
 #heartPicture{
-    height: 130%;
-    width: 350px;
-}
-
+      height: 130%;
+      width: 600px;
+  }
+  
 .navigation{
     grid-column: 3 / span2;
     grid-row: 1 / 2;
     z-index: 5;
     justify-self: center;
+}
+#home:hover,
+#media:hover,
+#about:hover,
+#games:hover {
+  color:rgb(255, 71, 26);
 }
 #about {
     color: rgb(255, 153, 128);
@@ -42,10 +47,10 @@ header {
     color: rgb(255, 153, 128);
 }
 #media {
-    color:rgb(255, 71, 26);
+    color: rgb(255, 153, 128);
 }
 #silly {
-    color: rgb(255, 153, 128);
+    color:rgb(255, 71, 26);
 }
 #games {
      color: rgb(255, 153, 128);
@@ -77,8 +82,9 @@ ul li {
 
 .profile {
     height: 100%;
-    width: 1200px;  
+    width: 1090px;  
 }
+  
   
 nav {
     grid-column: 1 / span2;
@@ -91,3 +97,47 @@ h2 {
     font-size: 40px;
     color:rgb(179, 134, 0);
 }
+
+
+button {
+   grid-row: 4 / 4;
+ grid-column: 2 / 3;
+justify-self: center;
+z-index: 5;
+    background-color: rgb(255, 153, 128);
+    text-decoration: none;
+    font-size: 50px;
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    border: none;
+    font-family: 'Kalam', cursive;;
+    font-weight: bold;
+    border-radius: 50%;
+    z-index: 5;
+  }
+ .txt {
+   grid-row: 3 /3;
+   grid-column: 2 / span2;
+   z-index: 5;
+   justify-self: left;
+   
+    }
+
+ .mandala {
+   grid-row: 3 / span2;
+   grid-column: 2 / span2;
+   justify-self: center;
+   opacity: 0.6;
+  
+ }
+ #mandalaPicture{
+   width: 550px;
+ }
+
+#gifHeart{
+  grid-row: 4 / 4;
+  grid-column: 1/ 2;
+  justify-self: right;
+}
+

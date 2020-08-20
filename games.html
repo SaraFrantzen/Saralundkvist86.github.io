@@ -1,52 +1,69 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="./style.css" type="text/css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
   <title>My First Website</title>
+  <link rel="stylesheet" type="text/css" href="./css/games.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body class="body2">
-  <nav class="navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pictures.html">Media</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="silly.html">Silly Things</a></li>
-      <li><a href="games.html">Games</a></li>
-    </ul>
-  </nav>
+<body>
+<div class="container">
+<section class="navHearts">
+    <img src="./pictures/aboutPictures/heart2.png" id="heartPicture"> 
+</section>
+
+<section class="sara">
+    <h1>SaraRaraUnderbara</h1>
+</section>
+
 <header>
-  <center>
-    <body>
-        <p class="instructions-title">Instructions</p>
-        <table class="instructions-row">
-          <tr>
-            <td class="instructions-number">1</td>
-            <td class="instructions-text">Poop is hiding behind one of these showercurtains</td>
-          </tr>
-          <tr>
-            <td class="instructions-number">2</td>
-            <td class="instructions-text">Your mission is to open all of the showercurtains without running into the poop.</td>
-          </tr>
-          <tr>
-            <td class="instructions-number">3</td>
-            <td class="instructions-text">If you manage to avoid the poop until you open the very last showercurtain, you win!</td>
-          </tr>
-          <tr>
-            <td class="instructions-number">4</td>
-            <td class="instructions-text">See if you can score a winning streak!</td>
-          </tr>
-        </table>
-        
-          <img id="door1" src="./pictures/gamePictures/showercurtains.jpg">
-          <img id="door2" src="./pictures/gamePictures/showercurtains.jpg">
-          <img id="door3" src="./pictures/gamePictures/showercurtains.jpg">
-     
-        <div id="start" class="start-row">Good luck!</div>
-  </center>
+      <img src="./pictures/aboutPictures/4.jpg" class="profile" alt="picture of me, Sara"> 
 </header>
+
+<nav>
+    <ul>
+      <li> <a href="./index.html" id="home">Home</a> </li>
+      <li> <a href="./about.html" id="about">About</a></li>
+        <li><a id="media" href="./media.html">Media</a></li>
+              <li><a id="silly" href="./silly.html">Love</a></li>
+        <li><a id="games" href="./games.html">Games</a></li>
+        </ul>
+</nav>
+</div>
+
+<p class="instructions-title">Instructions</p>
+<table class="instructions-row">
+<tr>
+<td class="instructions-number">1</td>
+<td class="instructions-text">Poop is hiding behind one of these showercurtains</td>
+</tr>
+<tr>
+<td class="instructions-number">2</td>
+<td class="instructions-text">Your mission is to open all of the showercurtains without running into the poop.</td>
+</tr>
+<tr>
+<td class="instructions-number">3</td>
+<td class="instructions-text">If you manage to avoid the poop until you open the very last showercurtain, you win!</td>
+</tr>
+<tr>
+<td class="instructions-number">4</td>
+<td class="instructions-text">See if you can score a winning streak!</td>
+</tr>
+</table>
+<div class="pictures">
+  <img id="door1" src="./pictures/gamePictures/showercurtains.jpg">
+  <img id="door2" src="./pictures/gamePictures/showercurtains.jpg">
+  <img id="door3" src="./pictures/gamePictures/showercurtains.jpg">
+</div>
+<div id="start" class="start-row">Good luck!</div>
+
 <script type="text/javascript" src="poopgame.js"></script>
+
 </body>
+</html>
+

@@ -96,9 +96,9 @@ door3.onclick = () => {
 }
 const gameOver = (status) => {
     if (status === 'lose') {
-        startButton.innerHTML = 'Game over! Play again?';
+        startButton.innerHTML = 'Game over!';
       } else { 
-        startButton.innerHTML = 'You win! Play again?';
+        startButton.innerHTML = 'You win!';
       }
 };
 

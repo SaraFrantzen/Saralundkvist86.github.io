@@ -1,0 +1,165 @@
+.container {
+  display: grid;
+  position: relative;
+  margin: auto;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 100px; 
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+header {
+  grid-column: 1 / span2;
+  grid-row: 1 / 2;
+  justify-self: center;
+}
+
+.navHearts {
+  grid-column: 3 / span2;
+  grid-row: 1 / 2;
+  z-index: 5;
+  justify-self:center;
+  margin-left: 180px;
+}
+
+#heartPicture{
+  padding-top: 30px;
+    height: 130%;
+    width: 350px;
+}
+
+
+.navigation{
+  grid-column: 3 / span2;
+  grid-row: 1 / 2;
+  z-index: 5;
+  justify-self: center;
+}
+#home:hover,
+#about:hover,
+#silly:hover,
+#media:hover {
+color:rgb(255, 71, 26);
+}
+#about {
+  color: rgb(255, 153, 128);
+}
+#home {
+  color: rgb(255, 153, 128);
+}
+#media {
+  color: rgb(255, 153, 128);
+}
+#silly {
+  color: rgb(255, 153, 128);
+}
+#games {
+    color:rgb(255, 71, 26);
+}
+
+a {
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 50px;
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none; 
+  display: inline;
+  text-align: center;
+  padding: 22px;
+}
+
+.sara {
+  grid-column: 1 / span2;
+  grid-row: 1 / 2;
+  z-index: 5;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 80px;
+  color:rgb(179, 134, 0);
+  text-align: left;
+}
+
+.profile {
+  height: 100%;
+  width: 1090px;  
+}
+
+
+nav {
+  grid-column: 1 / span2;
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+
+/*end of container*/
+
+#door1,
+#door2,
+#door3 {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 300px;
+  }
+  
+.pictures {
+ margin-top: 100px;
+ text-align: center;
+ margin-bottom: 60px;
+
+}
+
+.instructions-title {
+  font-family: 'Bad Script', cursive;
+  font-size: 40px;
+  color:rgb(179, 134, 0);
+  text-align: center;
+  font-weight: bold;
+}
+
+.instructions-row {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.instructions-number {
+  padding-right: 25px;
+  font-family: 'Work Sans';
+  font-size: 36px;
+  color: #ffcce6;
+}
+
+.instructions-text {
+  padding: 10px;
+  font-family: 'Bad Script', cursive;
+  font-size: 20px;
+  color:rgb(179, 134, 0);
+  text-align: center;
+  display: inline;
+}
+
+.start-row {
+  margin: auto;
+  width: 120px;
+  height: 60px;
+  font-family: 'Work Sans';
+  background-color: #ffcce6;
+  padding-top: 18px;
+  font-size: 18px;
+  text-align: center;
+  color: #010165;
+  margin-bottom: 21px;
+  cursor: pointer;
+}
+
+#start {
+  text-align: center;
+}
+
+
+
